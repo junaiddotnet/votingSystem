@@ -14,7 +14,7 @@ namespace votingSystem.Infastructure
         private static float totalTime = 0;
         private static float requestCount = 0;
         public void Dispose()
-        {
+        { 
         }
 
         public void Init(HttpApplication context)

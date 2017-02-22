@@ -17,7 +17,7 @@ namespace votingSystem.Controllers
             return View(GetTimeStamps());
         }
         public ActionResult Modules()
-        {
+        { 
             var modules = HttpContext.ApplicationInstance.Modules;
             Tuple<string, string>[] data =
                 modules.AllKeys
