@@ -13,7 +13,7 @@ namespace votingSystem
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+             
             //routes.Add(new Route("handler/{*path}", new CustomRouteHandler { HandlerType = typeof(DayOfWeekHandler) }));
             routes.IgnoreRoute("handler/{*path}");
             routes.MapRoute(
