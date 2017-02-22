@@ -10,6 +10,7 @@ namespace votingSystem.Infastructure
     public class TotalTimeModule : IHttpModule
     {
         public int a = 0;
+        public int b = 0;
         private static float totalTime = 0;
         private static float requestCount = 0;
         public void Dispose()
