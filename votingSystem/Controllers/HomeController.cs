@@ -12,7 +12,7 @@ namespace votingSystem.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            int a = 0;
+            int a = 0; 
             Response.ClearContent();
           //  return View(HttpContext.Application["events"]);
             return View(GetTimeStamps());
