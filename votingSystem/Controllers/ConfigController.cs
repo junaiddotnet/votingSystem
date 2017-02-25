@@ -11,7 +11,7 @@ namespace votingSystem.Controllers
     public class ConfigController : Controller
     {
         // GET: Config
-        public ActionResult Index()
+        public ActionResult Index() 
         {
             Dictionary<string, object> configData = new Dictionary<string, object>();
             configData.Add("Counter", appStateHelper.Get(AppStateKeys.COUNTER,0));
