@@ -13,7 +13,7 @@ namespace votingSystem.Controllers
         {
             ControllerContext.HttpContext.Session["name"] = "junaid Mahmood";
             
-            return View();
+            return View(); 
         }
         public ActionResult show ()
         {
