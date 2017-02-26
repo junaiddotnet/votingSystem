@@ -115,6 +115,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegisterationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -122,6 +123,7 @@
     <Compile Include="Infastructure\DayModule.cs" />
     <Compile Include="Infastructure\DayOfWeekHandler.cs" />
     <Compile Include="Infastructure\NewUserDefaultsSection.cs" />
+    <Compile Include="Infastructure\SessionStateHelper.cs" />
     <Compile Include="Infastructure\SiteLengthHandler.cs" />
     <Compile Include="Infastructure\TimerModule.cs" />
     <Compile Include="Infastructure\TotalTimeModule.cs" />
@@ -135,6 +137,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\Modules.cshtml" />
     <Content Include="Views\Config\Index.cshtml" />
+    <Content Include="Views\Registeration\Index.cshtml" />
+    <Content Include="Views\Registeration\show.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
