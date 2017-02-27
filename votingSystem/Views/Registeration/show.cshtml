@@ -11,7 +11,16 @@
 </head>
 <body>
     <div> 
-        <h1>@Model</h1>
+        <h1>@ViewBag.name</h1>
+    </div>
+    <div>
+        @Session.SessionID
+    </div>
+    <div>
+        @Session.IsNewSession
+    </div>
+    <div>
+        @Session.Count
     </div>
 </body>
 </html>

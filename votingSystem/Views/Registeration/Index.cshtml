@@ -12,7 +12,26 @@
 </head>
 <body>
     <div> 
-        Session Store
+        <h1>
+            @ViewBag.name
+            
+        </h1>
+        <div>
+            @Session.SessionID
+        </div>
+        <div>
+            @Session.IsNewSession
+        </div>
+        <div>
+            @Session.Count
+        </div>
+
+
+    </div>
+    <div>
+        @Html.RouteLink("Show Link",new { controller="Registeration",action="show"})
+        @Html.RouteLink("Destroy Link", new { controller = "Registeration", action = "destroy" })
+
 
     </div>
 </body>

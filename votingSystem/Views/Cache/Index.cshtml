@@ -1,0 +1,35 @@
+﻿@model long?
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @if (Model.HasValue)
+        {
+            <h1>@Model:Bytes</h1>
+        }
+        else
+        {
+            <h1>
+                No casche Data
+            </h1>
+        }
+    </div>
+    <div>
+        @using (Html.BeginForm("PopulateData","Cache"))
+        {
+            <button type="submit" class="btn btn-primary">
+                Populate Data
+            </button>
+        }
+    </div>
+</body>
+</html>

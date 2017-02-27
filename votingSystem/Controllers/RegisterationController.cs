@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using votingSystem.Infastructure;
+using static votingSystem.Infastructure.SessionStateHelper;
 
 namespace votingSystem.Controllers
 {
@@ -11,14 +13,20 @@ namespace votingSystem.Controllers
         // GET: Registeration
         public ActionResult Index()
         {
-            ControllerContext.HttpContext.Session["name"] = "junaid Mahmood";
-            
+            SessionStateHelper.Set(SessionStateKeys.NAME, "juaid mahmood");
+            ViewBag.name = SessionStateHelper.Get(SessionStateKeys.NAME);
             return View(); 
         }
         public ActionResult show ()
         {
-            string name = ControllerContext.HttpContext.Session["name"].ToString();
-            return View("show",name);
+            ViewBag.name = SessionStateHelper.Get(SessionStateKeys.NAME);
+            
+            return View();
+        }
+        public ActionResult destroy ()
+        {
+            Session.Abandon();
+            return RedirectToAction("show");
         }
     }
 }
